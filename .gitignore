@@ -1,0 +1,6 @@
+node_modules/
+data/accounts.json
+data/accounts.json.*.tmp
+.env
+*.log
+.pnpm-store/

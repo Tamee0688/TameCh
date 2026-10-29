@@ -1,0 +1,637 @@
+
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The portfolio of Tamiru Chalchisa, a web developer.">
+  <meta name="theme-color" content="#0b1020">
+  <link rel="icon" type="image/png" href="assets/site-logo.png">
+
+  <title>Tami.com</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous" defer></script>
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Navigation -->
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#home"><img class="brand-photo" src="assets/site-logo.png" alt=""><span>TAMIRU CHALCHISA</span></a>
+
+      <button class="menu-toggle" id="menu-toggle"
+        aria-label="Open navigation"
+        aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav-menu" id="nav-menu">
+        <a class="nav-item" href="#about">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3.2"/><path d="M5.3 20c.7-3.3 3-5.1 6.7-5.1s6 1.8 6.7 5.1"/></svg>
+          <span class="nav-label">About</span>
+        </a>
+        <a class="nav-item" href="#skills">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="7" height="7" rx="1.5"/><rect x="13.5" y="3.5" width="7" height="7" rx="1.5"/><rect x="3.5" y="13.5" width="7" height="7" rx="1.5"/><rect x="13.5" y="13.5" width="7" height="7" rx="1.5"/></svg>
+          <span class="nav-label">Skills</span>
+        </a>
+        <a class="nav-item" href="#projects">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 7.5a2 2 0 0 1 2-2h4l2 2h7a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-13a2 2 0 0 1-2-2z"/><path d="M3.8 9h16.4"/></svg>
+          <span class="nav-label">Projects</span>
+        </a>
+        <a class="nav-item" href="#contact">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></svg>
+          <span class="nav-label">Contact</span>
+        </a>
+        <button class="theme-toggle" id="theme-toggle"
+          aria-label="Switch to light theme">
+          <span id="theme-icon">☼</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- Hero -->
+    <section class="hero section container" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow" style="font-size: 1.5rem; font-weight: bold;">
+          <span class="status-dot"></span>
+         I AM OPEN FOR BUILDING YOUR DREAM PROJECTS, I AM  HERE TO HELP YOU.
+        </p>
+
+        <h2 style="color: #fff; font-size: 2.5rem; font-weight: bold; margin-bottom: 1rem;">
+            <marquee direction="left">
+      WEL COME TO OUR <span class="gradient-text">TECHNOLOGY WORLD</span>,
+      COME TO UOR WORLD YOU CAN ACCESS EVERYTHING!!
+    </marquee>
+        </h2>
+
+        <p class="hero-subtitle">
+          Hi, I'm <strong>Tamiru Chalchisa</strong> — a web developer who enjoys
+          creating modern, responsive, and useful digital experiences.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">
+            Explore my work ↗
+          </a>
+
+          <a class="button button-ghost" href="#about">
+            About me ↓
+          </a>
+
+          <button class="button button-services" id="what-i-do-button"
+            type="button" aria-controls="what-i-do-panel" aria-expanded="false">
+            <span>What I Do</span>
+            <span class="what-i-do-cta">Click Here <span aria-hidden="true">↗</span></span>
+          </button>
+        </div>
+
+
+      </div>
+
+      <div class="hero-art">
+        <div class="portrait-motion">
+          <div class="portrait-frame reveal">
+            <img src="assets/tamiru-chalchisa.jpg" alt="Portrait of Tamiru Chalchisa">
+          </div>
+        </div>
+        <div class="social-links" role="group" aria-label="Social media profiles">
+          <a href="https://github.com/Tamee0688" target="_blank"
+             rel="noopener noreferrer" aria-label="GitHub" title="GitHub">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 .75a11.25 11.25 0 0 0-3.56 21.92c.56.1.77-.24.77-.54v-2.08c-3.14.68-3.8-1.33-3.8-1.33-.51-1.3-1.25-1.65-1.25-1.65-1.02-.7.08-.69.08-.69 1.13.08 1.73 1.16 1.73 1.16 1 .1 1.73-.24 2.15-.64.1-.73.4-1.22.72-1.5-2.5-.28-5.13-1.25-5.13-5.56 0-1.23.44-2.23 1.16-3.02-.12-.29-.5-1.43.11-2.98 0 0 .95-.3 3.1 1.15a10.8 10.8 0 0 1 5.64 0c2.15-1.45 3.1-1.15 3.1-1.15.62 1.55.23 2.69.12 2.98.72.79 1.15 1.79 1.15 3.02 0 4.32-2.63 5.27-5.14 5.55.41.36.77 1.04.77 2.1v3.13c0 .3.2.65.77.54A11.25 11.25 0 0 0 12 .75Z"/>
+            </svg>
+          </a>
+          <a href="https://www.linkedin.com/in/tamiru-chalchisa-178837339/"
+             target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M5.2 8.4H2.4V21h2.8V8.4ZM3.8 2.5a1.65 1.65 0 1 0 0 3.3 1.65 1.65 0 0 0 0-3.3ZM21.6 13.8c0-3.8-2-5.6-4.7-5.6a4.1 4.1 0 0 0-3.7 2v-1.8H10.4V21h2.8v-6.2c0-1.6.3-3.2 2.3-3.2s2 1.9 2 3.3V21h2.9l1.2-7.2Z"/>
+            </svg>
+          </a>
+          <a id="hero-email" href="mailto:chalchisa7371@gmail.com"
+             aria-label="Email" title="Email">
+            <svg class="icon-outline" viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="3" y="5" width="18" height="14" rx="2"/>
+              <path d="m4 7 8 6 8-6"/>
+            </svg>
+          </a>
+          <a href="https://www.upwork.com/freelancers/~017652bfc2c6138576" target="_blank"
+             rel="noopener noreferrer" aria-label="Upwork" title="Upwork">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <text x="1.5" y="16.5" font-family="Arial, sans-serif" font-size="12" font-weight="700">Up</text>
+            </svg>
+          </a>
+          <a href="https://www.facebook.com/taammiruu.caalchisaa.5" target="_blank"
+             rel="noopener noreferrer" aria-label="Facebook" title="Facebook">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M13.3 21v-8h2.8l.4-3.1h-3.2v-2c0-.9.3-1.5 1.6-1.5h1.7V3.6c-.3 0-1.3-.1-2.5-.1-2.5 0-4.1 1.5-4.1 4.3v2.1H7.3V13H10v8h3.3Z"/>
+            </svg>
+          </a>
+          <a href="https://www.instagram.com/taammiruu.caalchisaa.5" target="_blank"
+             rel="noopener noreferrer" aria-label="Instagram" title="Instagram">
+            <svg class="icon-outline" viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="3" y="3" width="18" height="18" rx="5"/>
+              <circle cx="12" cy="12" r="4"/>
+              <circle class="icon-dot" cx="18" cy="6.5" r="1"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <a class="scroll-cue" href="#about">
+        <span></span> Scroll to explore
+      </a>
+    </section>
+
+    <section class="services-panel container" id="what-i-do-panel" hidden
+      aria-labelledby="services-title">
+      <div class="services-heading">
+        <p class="eyebrow">WHAT I DO</p>
+        <h2 id="services-title">Ways I can <span class="gradient-text">help.</span></h2>
+        <p>Select a service to explore the document and video workspaces.</p>
+      </div>
+
+      <div class="services-grid">
+        <button class="service-card" type="button" data-service-name="Web Development" aria-haspopup="dialog">
+          <span class="service-number">01</span>
+          <span class="service-icon" aria-hidden="true">&lt;/&gt;</span>
+          <h3>Web Development</h3>
+          <p>Responsive websites and interactive web experiences.</p>
+          <span class="service-card-action">Explore this service <span aria-hidden="true">↗</span></span>
+        </button>
+        <button class="service-card" type="button" data-service-name="Graphic Design" aria-haspopup="dialog">
+          <span class="service-number">02</span>
+          <span class="service-icon" aria-hidden="true">✦</span>
+          <h3>Graphic Design</h3>
+          <p>Clear visual identities, layouts, and digital graphics.</p>
+          <span class="service-card-action">Explore this service <span aria-hidden="true">↗</span></span>
+        </button>
+        <button class="service-card" type="button" data-service-name="Video Editing" aria-haspopup="dialog">
+          <span class="service-number">03</span>
+          <span class="service-icon" aria-hidden="true">▶</span>
+          <h3>Video Editing</h3>
+          <p>Polished edits with thoughtful pacing and transitions.</p>
+          <span class="service-card-action">Explore this service <span aria-hidden="true">↗</span></span>
+        </button>
+        <button class="service-card" type="button" data-service-name="Mobile Application" aria-haspopup="dialog">
+          <span class="service-number">04</span>
+          <span class="service-icon" aria-hidden="true">▣</span>
+          <h3>Mobile Application</h3>
+          <p>Useful mobile app experiences designed for small screens.</p>
+          <span class="service-card-action">Explore this service <span aria-hidden="true">↗</span></span>
+        </button>
+        <button class="service-card" type="button" data-service-name="Machine Learning" aria-haspopup="dialog">
+          <span class="service-number">05</span>
+          <span class="service-icon" aria-hidden="true">◉</span>
+          <h3>Machine Learning</h3>
+          <p>Data-driven tools for prediction, classification, and automation.</p>
+          <span class="service-card-action">Explore this service <span aria-hidden="true">↗</span></span>
+        </button>
+        <button class="service-card" type="button" data-service-name="Requirement Engineering" aria-haspopup="dialog">
+          <span class="service-number">06</span>
+          <span class="service-icon" aria-hidden="true">☷</span>
+          <h3>Requirement Engineering</h3>
+          <p>Clear user needs, system requirements, and project scope.</p>
+          <span class="service-card-action">Explore this service <span aria-hidden="true">↗</span></span>
+        </button>
+      </div>
+    </section>
+
+    <div class="service-access-backdrop" id="service-access-backdrop" hidden>
+      <section class="service-access-dialog" id="service-access-dialog"
+        role="dialog" aria-modal="true" aria-labelledby="service-access-title"
+        aria-describedby="service-access-description">
+        <button class="service-access-close" id="service-access-close"
+          type="button" aria-label="Close service menu">×</button>
+        <p class="eyebrow">TECHNOLOGY WORKSPACE</p>
+        <h2 id="service-access-title">Welcome to the Technology World</h2>
+        <p class="service-access-description" id="service-access-description">
+          Choose what you want to explore for <strong id="service-selected-name">this service</strong>.
+        </p>
+        <h3>What do you want?</h3>
+        <div class="service-access-choices">
+          <a class="service-access-choice" id="documents-dashboard-link" href="/documents.html">
+            <span class="service-choice-icon" aria-hidden="true">▤</span>
+            <span class="service-choice-copy"><strong>Document</strong><small>Open the document dashboard</small></span>
+            <span class="service-choice-arrow" aria-hidden="true">↗</span>
+          </a>
+          <a class="service-access-choice" id="videos-dashboard-link" href="/videos.html">
+            <span class="service-choice-icon" aria-hidden="true">▶</span>
+            <span class="service-choice-copy"><strong>Video</strong><small>Open the video dashboard</small></span>
+            <span class="service-choice-arrow" aria-hidden="true">↗</span>
+          </a>
+        </div>
+        <p class="service-access-footnote">You can return to the portfolio at any time.</p>
+      </section>
+    </div>
+
+    <!-- About -->
+    <section class="section container" id="about">
+      <div class="section-heading reveal">
+        <p class="eyebrow">ABOUT ME</p>
+        <h2>Building with <span class="gradient-text">purpose.</span></h2>
+      </div>
+
+      <div class="about-grid row g-5 align-items-start">
+        <div class="about-copy reveal col-12 col-lg-6">
+          <p class="lead">I enjoy making technology feel simple.</p>
+          <p>
+            I'm a web developer interested in building clear, useful
+            experiences for the people who use them.
+          </p>
+          <p>
+            I value clean code, responsive design, accessibility,
+            teamwork, and continuous learning.
+          </p>
+        </div>
+
+        <div class="about-stats reveal col-12 col-lg-6">
+          <div class="stat-card">
+            <strong>01</strong>
+            <span>Thoughtful design</span>
+            <p>Interfaces built around people.</p>
+          </div>
+          <div class="stat-card">
+            <strong>02</strong>
+            <span>Reliable code</span>
+            <p>Readable and maintainable solutions.</p>
+          </div>
+          <div class="stat-card">
+            <strong>03</strong>
+            <span>Always learning</span>
+            <p>Curiosity drives improvement.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section section-muted" id="skills">
+      <div class="container">
+        <div class="section-heading reveal">
+          <h2>Technologies I <span class="gradient-text">use.</span></h2>
+          <p class="section-intro">
+            Tools and technologies for building modern applications.
+          </p>
+        </div>
+
+        <div class="card-slider reveal" data-card-slider role="group" aria-label="Technology card slider">
+          <div class="skills-grid card-slider-track">
+            <article class="skill-card" data-slider-card data-depth="0" role="group" aria-roledescription="slide" aria-label="1 of 4: Frontend" tabindex="0">
+              <div class="skill-icon">⌘</div>
+              <h3>Frontend</h3>
+              <p>Responsive and accessible interfaces.</p>
+              <div class="tag-list">
+                <span>HTML5</span><span>CSS3</span>
+                <span>JavaScript</span><span>Bootstrap</span>
+              </div>
+            </article>
+
+            <article class="skill-card" data-slider-card data-depth="1" role="group" aria-roledescription="slide" aria-label="2 of 4: Backend" aria-hidden="true" tabindex="-1" inert>
+              <div class="skill-icon">⚙</div>
+              <h3>Backend</h3>
+              <p>Add the server-side tools and languages you know.</p>
+              <div class="tag-list">
+                <span>Your language</span><span>Your framework</span>
+              </div>
+            </article>
+
+            <article class="skill-card" data-slider-card data-depth="2" role="group" aria-roledescription="slide" aria-label="3 of 4: Database" aria-hidden="true" tabindex="-1" inert>
+              <div class="skill-icon">▤</div>
+              <h3>Database</h3>
+              <p>Add the databases and data tools you've used.</p>
+              <div class="tag-list">
+                <span>Your database</span><span>Your query language</span>
+              </div>
+            </article>
+
+            <article class="skill-card" data-slider-card data-depth="3" role="group" aria-roledescription="slide" aria-label="4 of 4: Developer tools" aria-hidden="true" tabindex="-1" inert>
+              <div class="skill-icon">↗</div>
+              <h3>Developer tools</h3>
+              <p>Show the tools you use to build and collaborate.</p>
+              <div class="tag-list">
+                <span>Your tools</span>
+              </div>
+            </article>
+          </div>
+          <div class="card-slider-controls">
+            <button class="card-slider-toggle" type="button" data-slider-toggle
+              data-collapsed-label="SHOW ALL TECHNOLOGIES ↓"
+              data-expanded-label="STACK TECHNOLOGIES ↑"
+              aria-expanded="false">SHOW ALL TECHNOLOGIES ↓</button>
+          </div>
+          <p class="card-slider-hint">CLICK A CARD TO SEE ALL</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section container" id="projects">
+      <div class="section-heading reveal">
+        <p class="eyebrow"> SELECTED WORK</p>
+        <h2>Things I've <span class="gradient-text">built.</span></h2>
+        <p class="section-intro">
+          A collection of projects. Click once to see every project together.
+        </p>
+      </div>
+
+      <div class="card-slider reveal" data-card-slider role="group" aria-label="Project card slider">
+        <div class="projects-grid card-slider-track">
+
+        <article class="project-card" data-slider-card data-depth="0" role="group" aria-roledescription="slide" aria-label="1 of 3: Ecommerce" tabindex="0">
+          <div class="project-visual visual-purple has-project-image">
+            <span class="project-number">PROJECT / 01</span>
+            <img class="project-image" src="assets/project-ecommerce.png"
+              alt="Illustration of an online shopping and ecommerce experience" loading="lazy">
+          </div>
+
+          <div class="project-body">
+            <div class="project-meta">
+              <span>01</span>
+            </div>
+            <h3>Ecommerce</h3>
+            <p>
+              Replace this example with a project you've built. Describe
+              the problem it solves and what you contributed.
+            </p>
+            <div class="tag-list">
+              <span>HTML</span><span>CSS</span>
+              <span>JavaScript</span><span>Bootstrap</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/your-username/project-one"
+                 target="_blank" rel="noopener noreferrer">Source code ↗</a>
+              <a href="#contact">Discuss project ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card" data-slider-card data-depth="1" role="group" aria-roledescription="slide" aria-label="2 of 3: Student Management System" aria-hidden="true" tabindex="-1" inert>
+          <div class="project-visual visual-blue has-project-image">
+            <span class="project-number">PROJECT / 02</span>
+            <img class="project-image" src="assets/project-student-management.png"
+              alt="Student management system dashboard on a laptop" loading="lazy">
+          </div>
+
+          <div class="project-body">
+            <div class="project-meta">
+              <span>02</span>
+            </div>
+            <h3>Student Management System</h3>
+            <p>
+              Add another project, explain the key features, and say how
+              you approached the design or implementation.
+            </p>
+            <div class="tag-list">
+              <span>HTML5</span><span>CSS3</span>
+              <span>JavaScript</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/your-username/project-two"
+                 target="_blank" rel="noopener noreferrer">Source code ↗</a>
+              <a href="#contact">Discuss project ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card" data-slider-card data-depth="2" role="group" aria-roledescription="slide" aria-label="3 of 3: Payment Card" aria-hidden="true" tabindex="-1" inert>
+          <div class="project-visual visual-green has-project-image">
+            <span class="project-number">PROJECT / 03</span>
+            <img class="project-image" src="assets/project-payment-card.png"
+              alt="Front and back design of a blue bank payment card" loading="lazy">
+          </div>
+
+          <div class="project-body">
+            <div class="project-meta">
+              <span>03</span>
+            </div>
+            <h3>Payment Card</h3>
+            <p>
+              Use this space for a third project, including the tools you
+              used and a result or lesson from the work.
+            </p>
+            <div class="tag-list">
+              <span>JavaScript</span><span>CSS3</span><span>HTML5</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/your-username/project-three"
+                 target="_blank" rel="noopener noreferrer">Source code ↗</a>
+              <a href="#contact">Discuss project ↗</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+        <div class="card-slider-controls">
+          <button class="card-slider-toggle" type="button" data-slider-toggle
+            data-collapsed-label="SHOW ALL PROJECTS ↓"
+            data-expanded-label="STACK PROJECTS ↑"
+            aria-expanded="false">SHOW ALL PROJECTS ↓</button>
+        </div>
+        <p class="card-slider-hint">CLICK A CARD TO SEE ALL</p>
+      </div>
+
+      <div class="more-projects-action">
+        <button class="button button-primary" id="see-more-button"
+          type="button" aria-controls="more-projects" aria-expanded="false">
+          SEE MORE <span aria-hidden="true">↓</span>
+        </button>
+      </div>
+
+      <section class="more-projects-panel" id="more-projects" hidden
+        aria-labelledby="more-projects-title">
+        <div class="more-projects-heading">
+          <div>
+            <p class="eyebrow">MEMBER PROJECTS</p>
+            <h3 id="more-projects-title">More work</h3>
+          </div>
+          <div class="member-controls">
+            <span id="member-label"></span>
+            <button class="button button-ghost logout-button" id="logout-button" type="button">
+              Log out
+            </button>
+          </div>
+        </div>
+        <div class="private-projects-grid" id="private-projects-grid"></div>
+        <p class="form-status" id="private-project-status" role="status" aria-live="polite"></p>
+      </section>
+
+      <div class="auth-backdrop" id="auth-backdrop" hidden>
+        <section class="auth-dialog" role="dialog" aria-modal="true"
+          aria-labelledby="auth-dialog-title" aria-describedby="auth-dialog-description"
+          tabindex="-1">
+          <button class="auth-close" id="auth-close" type="button" aria-label="Close sign-up and login">
+            &times;
+          </button>
+
+          <p class="eyebrow">MEMBER ACCESS</p>
+          <h3 id="auth-dialog-title">Create your account</h3>
+          <p class="auth-description" id="auth-dialog-description">
+            Sign up first. Then log in to see the additional projects.
+          </p>
+
+          <div id="signup-view">
+            <form class="auth-form" id="signup-form">
+              <label for="signup-name">Name</label>
+              <input class="form-control" id="signup-name" name="name"
+                type="text" autocomplete="name" maxlength="80" required>
+
+              <label for="signup-email">Email address</label>
+              <input class="form-control" id="signup-email" name="email"
+                type="email" autocomplete="email" maxlength="254" required>
+
+              <label for="signup-password">Password</label>
+              <input class="form-control" id="signup-password" name="password"
+                type="password" autocomplete="new-password"
+                minlength="8" maxlength="128" required>
+
+              <button class="button button-primary auth-submit" type="submit">
+                <span data-submit-label>Sign up</span>
+                <svg class="auth-submit-icon" viewBox="0 0 24 24" aria-hidden="true">
+                  <rect x="5" y="10" width="14" height="11" rx="2" />
+                  <path d="M8 10V7a4 4 0 1 1 8 0v3M12 14v3" />
+                </svg>
+              </button>
+            </form>
+            <p class="auth-switch-copy">
+              Already have an account?
+              <button class="auth-switch" id="show-login" type="button">Log in</button>
+            </p>
+          </div>
+
+          <div id="login-view" hidden>
+            <form class="auth-form" id="login-form">
+              <label for="login-email">Email address</label>
+              <input class="form-control" id="login-email" name="email"
+                type="email" autocomplete="email" maxlength="254" required>
+
+              <label for="login-password">Password</label>
+              <input class="form-control" id="login-password" name="password"
+                type="password" autocomplete="current-password" maxlength="128" required>
+
+              <button class="button button-primary auth-submit" type="submit">
+                <span data-submit-label>Log in</span>
+                <svg class="auth-submit-icon" viewBox="0 0 24 24" aria-hidden="true">
+                  <rect x="5" y="10" width="14" height="11" rx="2" />
+                  <path d="M8 10V7a4 4 0 1 1 8 0v3M12 14v3" />
+                </svg>
+              </button>
+            </form>
+            <p class="auth-switch-copy">
+              Need an account?
+              <button class="auth-switch" id="show-signup" type="button">Sign up</button>
+            </p>
+          </div>
+
+          <p class="form-status" id="auth-status" role="status" aria-live="polite"></p>
+        </section>
+      </div>
+    </section>
+
+    <!-- Call to action -->
+    <section class="cta-section container reveal">
+      <div>
+        <p class="eyebrow">HAVE SOMETHING IN MIND?</p>
+        <h2>Let's build something <span class="gradient-text">useful.</span></h2>
+        <p>Tell me about an idea, a project, or an opportunity.</p>
+      </div>
+      <a class="button button-primary" href="#contact">
+        Start a conversation ↗
+      </a>
+    </section>
+
+    <!-- Contact -->
+    <section class="section container contact-section" id="contact">
+      <div class="section-heading reveal">
+        <p class="eyebrow">GET IN TOUCH</p>
+        <h2>Have a project? <span class="gradient-text">Say hello.</span></h2>
+        <p class="section-intro">
+          Send me a message using the contact form.
+        </p>
+      </div>
+
+      <div class="contact-grid row g-5">
+        <div class="contact-info reveal col-12 col-lg-5">
+          <h3>Contact details</h3>
+          <p>
+            Have a question, opportunity, or idea?
+            I'd be happy to hear from you.
+          </p>
+
+          <a class="contact-item" id="contact-email" href="mailto:chalchisa7371@gmail.com">
+            <span>✉</span>
+            <div>
+              <small>Email</small>
+                <strong>chalchisa7371@gmail.com</strong>
+            </div>
+          </a>
+
+          <div class="contact-note">
+            <span class="status-dot"></span>
+            Available for a conversation
+          </div>
+        </div>
+
+        <form class="contact-form col-12 col-lg-7" id="contact-form">
+          <label class="form-label" for="name">Your name</label>
+          <input id="name" name="name" type="text"
+            minlength="2" maxlength="80"
+            class="form-control" placeholder="Your name" required>
+
+          <label class="form-label" for="email">Email address</label>
+          <input id="email" name="email" type="email"
+            maxlength="254" class="form-control"
+            placeholder="you@example.com" required>
+
+          <label class="form-label" for="subject">Subject</label>
+          <input id="subject" name="subject" type="text"
+            minlength="3" maxlength="120"
+            class="form-control" placeholder="Project inquiry" required>
+
+          <label class="form-label" for="message">Message</label>
+          <textarea id="message" name="message" rows="5"
+            minlength="10" maxlength="5000" class="form-control"
+            placeholder="Tell me about your idea..." required></textarea>
+
+          <div class="form-status" id="form-status"
+            role="status" aria-live="polite"></div>
+
+          <button class="button button-primary submit-button auth-submit"
+            id="submit-button" type="submit">
+            <span data-submit-label>Open email app</span>
+            <svg class="auth-submit-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="3" y="5" width="18" height="14" rx="2" />
+              <path d="m4 7 8 6 8-6" />
+            </svg>
+          </button>
+
+          <p class="form-footnote">
+            This opens the visitor's email app with a draft addressed to you.
+          </p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a class="brand" href="#home"><img class="brand-photo" src="assets/site-logo.png" alt=""><span>TAMIRU CHALCHISA</span></a>
+      <p>Designed and built by software engineering Tamiru chalchisa. <span id="year"></span></p>
+      <a href="#home" class="back-top">Back to top ↑</a>
+    </div>
+  </footer>
+
+</body>
+</html>

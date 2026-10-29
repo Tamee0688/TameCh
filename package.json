@@ -1,0 +1,16 @@
+{
+  "name": "tamiru-chalchisa-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Tamiru Chalchisa's portfolio with account-gated projects",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "mysql2": "^3.24.5"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

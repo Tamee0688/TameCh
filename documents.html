@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b1020">
+  <meta name="description" content="Tamiru Chalchisa's document dashboard.">
+  <title>Document Dashboard | Tamiru Chalchisa</title>
+  <link rel="icon" type="image/png" href="/assets/site-logo.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+  <script src="/dashboard.js" defer></script>
+</head>
+<body class="dashboard-page">
+  <header class="dashboard-header">
+    <div class="dashboard-header-inner container">
+      <a class="brand" href="/" aria-label="Tamiru Chalchisa portfolio home">
+        <img class="brand-photo" src="/assets/site-logo.png" alt="">
+        <span>TAMIRU CHALCHISA</span>
+      </a>
+      <a class="button button-ghost" href="/">← Back to portfolio</a>
+    </div>
+  </header>
+
+  <main class="dashboard-main">
+    <div class="dashboard-heading">
+      <div>
+        <p class="eyebrow">DOCUMENT WORKSPACE</p>
+        <h1>Document <span class="gradient-text">Dashboard.</span></h1>
+        <p>Browse project briefs, technical notes, and design resources.</p>
+        <p class="dashboard-context" id="dashboard-service-context" hidden>
+          Opened from <strong id="dashboard-service-name"></strong>
+        </p>
+      </div>
+      <a class="button button-primary" href="mailto:chalchisa7371@gmail.com?subject=Document%20workspace">
+        Request a document ↗
+      </a>
+    </div>
+
+    <h2 class="dashboard-section-title">Document collections</h2>
+    <div class="dashboard-category-grid">
+      <article class="dashboard-category">
+        <span class="dashboard-category-icon" aria-hidden="true">▤</span>
+        <h2>Project briefs</h2>
+        <p>Goals, project scope, and planned features.</p>
+      </article>
+      <article class="dashboard-category">
+        <span class="dashboard-category-icon" aria-hidden="true">⌘</span>
+        <h2>Technical notes</h2>
+        <p>Requirements, architecture, and implementation notes.</p>
+      </article>
+      <article class="dashboard-category">
+        <span class="dashboard-category-icon" aria-hidden="true">✦</span>
+        <h2>Design resources</h2>
+        <p>Visual guides, layouts, and supporting assets.</p>
+      </article>
+    </div>
+
+    <section class="dashboard-empty-state" aria-labelledby="document-empty-title">
+      <span class="dashboard-empty-icon" aria-hidden="true">▤</span>
+      <h2 id="document-empty-title">Your document space is ready</h2>
+      <p>No documents have been added here yet. When project files are ready, this dashboard can organize them by collection.</p>
+      <a class="button button-ghost" href="mailto:chalchisa7371@gmail.com?subject=Document%20workspace">
+        Contact me about documents ↗
+      </a>
+    </section>
+  </main>
+</body>
+</html>
